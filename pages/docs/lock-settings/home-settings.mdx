@@ -1,0 +1,62 @@
+import { Center } from "../../../components/center"
+import { Steps, Callout, Cards } from 'nextra/components'
+
+# <Center>Create Lock Home Settings</Center>
+
+Use the `/createlock` command to open this menu.
+
+
+## <Center>Time Settings</Center>
+
+### Set Min Time
+
+Opens up a modal for you to set a minimum time for the lock. This is only option required to start a lock.
+
+
+
+### Set Max Time
+
+Setting a maximum time will create a time range between min and max when you create a lock. For example if you set a min time of 1 day and a max of 7, when the lock is created it will pick a time between 1 and 7 days.
+
+<Callout type="info">
+  You can always add more time after a lock is created at any time. However, only keyholders can remove time from a lock.
+</Callout>
+
+### Set Time Limit
+
+A time limit sets a limit on how long the lock can exist for. If the lock surpasses the time limit then the lock will be able to be unlocked, even if the timer is frozen and or has more time remaining.
+
+The time limit can be extended by you at any time once you have created a lock. However only you can change this, keyholders can not.
+
+
+
+## <Center>Code Settings</Center>
+
+
+### Submit Lock Tag
+
+Submit a public lock tag. This is one time use lock/seal to lock your keys away with each seal having its own code on it. This is public and is shown on your lock menu. [Example](https://kink3d.com/products/double-key-sleeves)
+
+
+
+### Submit Lock Code
+
+Allows you to submit your own lock code. This is kept private unlike Lock Tag.
+
+
+### Create # Digit Lock Code
+
+Creates a lock code for a 3-6 digit lock. The code is order is randomized to prevent accidental memorization.
+
+<Callout type="info">
+  The last 5 codes you create are saved into a code pool for safety reasons even if the lock has ended, [learn more](/docs/safety#how-lock-bot-handles-codes)
+</Callout>
+
+
+
+## <Center>Other Settings</Center>
+
+
+### Toggle test lock
+
+Enabling a test lock prevents the lock from counting towards any of your stats, allowing you to test new things while keeping your stats in tact.

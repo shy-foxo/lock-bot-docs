@@ -1,0 +1,116 @@
+import { Center } from "../../components/center"
+
+# <Center>Lock Bot Change Log's</Center>
+
+Here you can find detailed logs about new updates to Lock bot. To get notified instantly about new updates [join our support server](https://discord.gg/cGv8szjzSf) and either follow the change log channel or equip the change log notification role. Want to know whats being developed next? Check out the [roadmap](https://sharing.clickup.com/9003150356/b/h/6-900302002559-2/f0d9effd2334748)!
+
+-------
+
+## Version 1.4.0
+
+➕ Added keyholder control system and keyholder command
+
+➕ Added history logs
+
+➕ Added profile command/system
+
+➕ Added lock, and keyholder stats
+
+➕ Added frozen locks ☃️
+
+➕ Added the option to freeze locks during custom unlocks, freeze as a punishment for exceeding unlock time limit and requiring keyholder to enable a custom unlock before it can be used
+
+➕ Added trusted user system and trusted-user command
+
+➕ Added DM logs
+
+➕ Added the ability to make your profile private and only viewable to your trusted users
+
+➕ Added user settings, which is accessed in the profile command
+
+➕ Added reason option when increasing the time limit, adding and removing time
+
+➕ Added the ability to mark locks as test locks, to not mess up stats 
+
+🐛 Fixed a bug causing modals to glitch out if you opened one, closed it, opened a new one and then submitted an input
+
+🐛 Fixed floating point bug in time display function
+
+🐛 Fixed a bug in the ping command causing an embed color to not display
+
+🐛 Other small misc bug fixes and spelling fixes
+
+🔧 Added tips in several places around the bot to help give helpful tips and ideas on how to use the bot
+
+🔧 Blocking users now removes you from their trusted user list and removes them from being a keyholder from your lock as well as preventing them from interacting with you in any way
+
+🛠️ Overhauled and improved error logs and tracking
+
+🛠️ Greatly improved data structures and interfaces internally
+
+## Version 1.3.0
+
+➕ Added the stats command
+
+➕ Added status to the bot, these change every hour
+
+➕ Added a lock limbo system
+
+🐛 Fixed a bug causing the custom unlocks to not function correctly
+
+🐛 Fixed a few spelling/markdown errors
+
+🔧 Overhauled the codebase, replacing all JavaScript with Typescript and fully moving to the new import file system
+
+🔧 Switched from node to bun for the runtime
+
+🛠️ Added user and bot stats, user stats will be visible later in hopefully the next major update
+
+🛠️ Improved lock fetching
+
+## Version 1.2.1
+
+🐛 Fixed a bug causing the lock command to not update after your lock updates
+
+## Version 1.2.0
+
+🔧 Overhauled how the bot handles codes internally
+
+➕ The bot now stores your last 5 codes, these can be viewed with /viewcodes. This does not show codes before this update or codes created in the last 20min or active codes 
+
+➕ You now have the options to create a code between 3-6 digits, submit your own code or submit your own tag. Tags are considered public and will be shown on your /lock 
+
+➕ Generated codes are now given to the user in a random order to try to eliminate the possibility for remembering the code
+
+➕ Codes are now stored the moment they are created removing the possibility of a lock out if the menu times out. In addition the createLock menu will return you your code if the menu times out
+
+➕ When a code is presented to the user it now asks if the code works or not, if the user hits does not work it launches into a troubleshooter mode to try to help the user
+
+➕ The bot is now storing lock created and lock finished stats to be used later
+
+🛠️ Minor bug fix and minor internal clean up 
+
+
+
+
+## Version 1.1.0
+
+Added custom unlock category
+
+Partly rebuilt the lock command, the menu system is now more consistent with the createLock command which is more scalable
+
+Once you start or end a lock the bot will now mention the command instead of just the command name
+
+Fixed a bug causing the bot to say your lock will end in 53 years once you stated it
+
+Fixed a few typos
+
+**Internal Changes**
+
+Added freeform and notify systems
+
+Broke up the snippet file into several smaller files 
+
+Updated Discord.js to v 14.13.0
+
+Started adding emotes into the config files 

@@ -1,0 +1,41 @@
+import { Center } from "../../../components/center"
+import { Steps, Callout, Cards } from 'nextra/components'
+
+# <Center>Trusted Users</Center>
+
+Trusted users are users that have an elevated level of trust and permissions with your account, think of it like a friends list. Trusted users can view your profile even if your account is private and they are also more easily accessible to add as a keyholder when creating a lock.
+
+
+<Callout type="info">
+  Currently, trusted user list is limited to only 25 users, this limitation will be removed in the future.
+</Callout>
+
+
+
+## <Center>Adding and Removing Trusted users</Center>
+
+Adding and removing trusted users is very similar to blocked users, in which there are 2 ways to add and remove users from your trusted user list.
+
+The first option is by looking at the users profile, then clicking the `User Options` button and then clicking `Add as Trusted User` button.
+
+![Adding trusted users with the profile command](https://cdn.lock-bot.com/AddTrusedUserProfileMethod)
+
+The second option is to use the `/trusted-users` command and provide a user option.
+
+![Add trusted user with the trusted user command](https://cdn.lock-bot.com/AddTrustedUserByCmd)
+
+To remove Trusted users use one of the methods above.
+
+<Callout type="info">
+  Users you have blocked can not be trusted users. Blocking a user that is in your trusted user list will automatically remove them.
+</Callout>
+
+
+
+## <Center>Viewing your Trusted Users</Center>
+
+To view your trusted user list run the `/trusted-users` command without providing a user option.
+
+![Trusted user list](https://cdn.lock-bot.com/TrustedIUserList)
+
+You can also use your trusted user list to easily add trusted users as keyholders when creating a new lock.

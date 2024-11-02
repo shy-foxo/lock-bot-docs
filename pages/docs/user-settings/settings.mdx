@@ -1,0 +1,75 @@
+import { Center } from "../../../components/center"
+import { Steps, Callout, Cards } from 'nextra/components'
+
+# <Center>Lock Bot User Settings</Center>
+
+User settings allow you to customize your user experience with Lock Bot.
+
+To access your user settings run the `/profile` command then click the `Settings` button.
+
+## <Center>User Settings</Center>
+
+### Private
+
+This setting allows you to mark your profile as private. Normal users will not be able to view your profile and running commands such as `/Createlock` and `/lock` will also be private messages that only you can see.
+
+However, trusted users and keyholders (pending or approved) can still view your profile, however it will also be a private message that only they can view.
+
+
+### DM Logs
+
+If DM logs are enabled Lock Bot will send you a DM whenever something changes with your own lock and locks you are keyholding. You will also get a DM for keyhold requests.
+
+![DM log example](https://cdn.lock-bot.com/DmLogs)
+
+When you enabled DM logs lock bot will send you a dm with some information but to also check that it is able to DM you.
+
+<Callout type="info">
+  If Lock Bot is no longer able to DM you this setting will be automatically disabled.
+</Callout>
+
+
+
+### Codeless stats
+
+By default, when creating a lock without setting a lock code, lock bot will not count time stats towards your user stats. This is because it is harder to track unlocks when you are keys are not being managed with lock bot. Enabling this will make locks without codes set track stats as normal.
+
+This does not affect the locks started and finished stats.
+
+
+
+### Tip Prompts
+
+Tip prompts are little tips that are sprinkled around the bot to help give you useful tips and ideas, these are enabled by default. 
+
+![Example Tip](https://cdn.lock-bot.com/ExampleTip)
+
+
+## <Center>Profile Settings</Center>
+
+### Set Color
+
+Set color allows you to change the color of your profile menu from the default color.
+
+Custom colors are reserved for donors and staff members.
+
+<Callout type="default">
+  Make sure to hit refresh on the profile and settings menu to see the color update
+</Callout>
+
+
+### Set Position
+
+This allows you to change what positions shows up on your profile, the current options are `Wearer` `Switch` and `Keyholder`, `none` removes any position from showing on your profile.
+
+
+
+### Set Location
+
+Set a short string for your location, max 30 charters.
+
+
+
+### Set Description
+
+Set a longer description about you on your profile. Max 500 charters.
