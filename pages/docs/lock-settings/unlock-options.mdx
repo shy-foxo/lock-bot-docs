@@ -13,34 +13,133 @@ Emergency unlock allows users to unlock and end the lock in the event of an emer
 
 ## <Center>Custom Unlocks</Center>
 
+Custom unlocks are a system to unlock mid session without ending the lock. You can create up **5**, each with their own name and fully unique settings.
 
-<Tabs items={['Basic', 'Hygiene', 'Work', "Reward"]}>
+To create a new custom unlock function select `add new unlock function`, this will prompt you to put in a name then hit enter. A name is the only item required for a custom unlock, all other settings are optional.
+
+To edit a custom unlock function select `edit 'name'`. Unlock functions can not be edited once the lock has started.
+
+💡 Some custom unlock ideas/examples are listed below:
+
+
+<Tabs items={['Hygiene', 'Work', "Reward"]}>
 
 
   <Tabs.Tab>
+    **Hygiene Opening**
+    Unlock to give a deep cleaning.
 
-    <Steps>
-    ## Step 1
-
-    Click `Add New Custom Unlock Function`
-
-    ## Step 2
-
-    Set a custom name and hit submit
-
-    ## Step 3
-
-    That is it! You have created a basic unlock option. Custom unlocks only need a name, every other setting is optional. Click the other tabs for ideas for other custom unlock ideas!
-
-
-    </Steps>
-
+    - **Unlock Time**: 20 Minutes - Allows for a shower a shower and other maintenance 
+    - **Interval Time**: 2 Days - Allows for cleanings often without being an always available unlock
+    - **Punishment Time**: 5 Hours - Gives an incentive to finish on time without being scary harsh
   </Tabs.Tab>
 
-  <Tabs.Tab>**npm** is a package manager for the JavaScript programming language.</Tabs.Tab>
 
-  <Tabs.Tab>**Yarn** is a software packaging system.</Tabs.Tab>
 
-  <Tabs.Tab>**Yarn** is a software packaging system.</Tabs.Tab>
+  <Tabs.Tab>
+    **Work Opening**
+    Unlock for work if the user is unable to lock during it.
+
+    - **Unlock Time**: 10 Hours - Allows for a work day with some wiggle room for long days
+    - **Interval Time**: 8 Hours - Prevents it from being activated immediately after being finished but allows flexibility for late days and early mornings
+    - **Punishment Time**: 5 Hours - Gives an incentive to finish on time without being scary harsh
+  </Tabs.Tab>
+
+
+
+  <Tabs.Tab>
+    **Reward Opening**
+    Unlock a user if they have been good for a super treat.
+
+    - **Unlock Time**: 10 Minutes/45 Minutes - Keep things random with a time range, maybe they will have a long unlock, maybe it will be short!
+    - **Freeze During Opening**: True - Keep the lock frozen for the duration of the unlock. Why keep the time counting down when this is not lock related
+    - **Interval Time**: Keyholder Trigger - Allows this to only be used when they have earned it
+    - **Punishment Time**: 1 Day/3 Days + Frozen lock - Very high incentive to finish on time with a random but steep penalty
+  </Tabs.Tab>
 
 </Tabs>
+
+## <Center>Custom Unlocks Settings</Center>
+
+
+### Rename
+
+Rename the custom unlock. Minimum 2 charters, maximum 30 charters.
+
+
+
+### Set Unlock Min Time
+
+Set how long the custom unlock option can be open for before triggering a punishment. If no max time is set this will be a static time.
+
+
+### Set Unlock Max Time
+
+Set the maximum unlock time. A minimum time is required to set this option.
+
+When both are set the unlock time will be a time in between min and max. This time is calculated when the unlock is started and will be a different time for every unlock.
+
+
+
+### Freeze During Unlock
+
+Freezes (pauses) the lock timer during the unlock and unfreezes once the unlock is finished. 
+
+If freeze is set as a punishment option and the punishment is triggered the lock will not get unfrozen. If the lock is already frozen when the unlock is started then the lock will not be unfrozen when the unlock is finished.
+
+
+
+### Interval Min Time
+
+Set the interval (cooldown) time until the custom unlock can be started again. If no max is set then this is a static time.
+
+Interval time is starts when the lock session is created and after a custom unlock has been finished. 
+
+
+
+### Interval Max Time
+
+Set the max interval time until the custom unlock can be started again. Minimum is needed before you can set a maximum.
+
+When both are set the interval time will be a time in between min and max. This time is calculated when the lock session is created and when the unlock is finished. The time will be a different time every time.
+
+
+
+### Keyholder Trigger Only
+
+Requires a keyholder to enable the custom unlock before it can be used.
+
+Once a keyholder enables a custom unlock the wearer needs to go start it for the custom unlock to start.
+
+If a interval time is set then the interval time also must be finished, the keyholder trigger is only an addition to and does not override the interval time.
+
+
+
+### Punish Min Time
+
+The minimum punishment time that is given if the unlock duration is exceeded. If no maximum time then then the punish time is static.
+
+
+
+### Punish Max Time
+
+The maximum punishment time, minimum is needed before you can set a maximum. 
+
+The punishment time is calculated whenever the user finished the lock and is different for every occurrence.
+
+
+
+### Freeze Lock
+
+Freezes the lock as a punishment if the unlock time is exceeded. 
+
+Does not unfreeze lock if lock is already frozen or if it was frozen during the unlock.
+
+
+
+### Hide Timer
+
+
+<Callout type="warning" emoji="⚠️">
+  Hidden timers currently do not exist and so this is a placer holder. This feature is coming soon.
+</Callout>

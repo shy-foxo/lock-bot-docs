@@ -40,7 +40,7 @@ export default {
     "change-log": {
         title: 'Change Log',
         type: "page",
-        href: "/change-log"
+        href: "/docs/change-log"
       },
     "beta-testing": {
         title: 'Beta Testing',
