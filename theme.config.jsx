@@ -15,6 +15,7 @@ export default {
       <meta property="og:locale" content="en_US"></meta>
       <meta property="og:site_name" content="Lock Bot"></meta>
       <meta property="og:image" content="/lockBotIcon.png"></meta>
+      <meta name="theme-color" content="#7289DA"></meta>
 
     </>
   ),
