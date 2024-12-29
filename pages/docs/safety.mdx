@@ -1,7 +1,7 @@
 import { Center } from "../../components/center"
 import { Steps, Callout, Cards } from 'nextra/components'
 
-# <Center>How Lock Bot Handles your Safety</Center>
+# <Center>How Lock Bot Handles Your Safety</Center>
 
 This guide explains the safety tools provided to you, how Lock Bot keeps you safe and the items that Lock Bot's staff can do to assist you.
 
@@ -50,64 +50,64 @@ This guide explains the safety tools provided to you, how Lock Bot keeps you saf
 
 ### How Lock Bot Handles Codes
 
-Codes are a core part of Lock Bot, they help you make sure your keys are not easily accessible when a lock is ongoing. However, unlike some services, codes are not required for locks in Lock Bot, so if you do not feel comfortable setting one or do not have the means to you can still easily use Lock bot.
+Codes are an essential part of Lock Bot. They help ensure your keys are not easily accessible when a lock is ongoing. However, unlike some services, using is optional in Lock Bot. Therefore, if you are uncomfortable using codes or do not have the means to, you can still easily use Lock Bot.
 
 <Callout type="info">
-  NOTE If you create a lock without a code by default it will not count time towards your stats unless you enable codeless stats in your user settings.
+  NOTE If you create a lock without a code, it will not count time towards your stats unless you enable codeless stats in your user settings.
 </Callout>
 
-Also unlike most other services Lock Bot also supports lock seals, these being one time use "locks" to lock your keys away while allowing them to be accessed at any time. Aside from the fact that this code is considered public and is displayed on the lock menu, it otherwise functions as if it is any other code.
+Also, unlike most other services, Lock Bot supports tamper seals. These seals act as one time "locks" to secure your lock or keys while allowing access at any time. Each seal includes a code that you can use to verify that you have not replaced it. The bot displays these codes publicly in the lock menu. They otherwise function as any other code would.
 
-Whenever a code is created, regardless of type, it gets stored into the code pool attached to your user account. This pool always stores the last 5 codes, and the active code is stored within the lock itself. This pool of codes can be accessed at any time by using the `/viewcodes` command.
+Whenever a code is created, regardless of type, it gets stored into the code pool attached to your user account. This pool always stores the last five codes, and the active code is stored within the lock itself. This pool of historic codes can be accessed at any time by using the `/viewcodes` command.
 
 ![The viewcodes command](https://cdn.lock-bot.com/ViewCodesCommand)
 
-All past codes will be displayed but the current active code and any codes created within the last 15 minutes will be hidden. If you need access to a hidden code [learn how Lock Bot's staff can help](#ending-locks).
+This command displays the last five codes, but it hides the current active code and any other codes created within the last 15 minutes. If you need access to a hidden code, [learn how Lock Bot's staff can help](#ending-locks).
 
 
-Whenever you are being unlocked, weather that be for a custom unlock, finishing a lock, ect, if you have a code set it will be presented to you. If a code is presented to you it will ask you if the code works correctly or not, this is Lock Bots code troubleshooter to help in case your code does not work as intended.
+Whenever you unlock your lock—whether for a custom unlock, finishing a lock, or another reason—the bot will provide you with your lock’s code. When the bot presents a code, it will ask you whether the code works. This prompt, part of Lock Bot’s code troubleshooter, helps you troubleshoot your code if it is not working.
 
 ![Lock Bot asking if the code works or not](https://cdn.lock-bot.com/codeConfirmation)
 
-If your code is correct no action is needed, you can either let the menu time out or select "Code works" which just closes the menu. Hitting "Code does not work!" however launches Lock Bots code troubleshooter. This provides the code along with tips and suggestions on how to resolve the incorrect code.
+If your code is correct, then no action is needed; you can either let the menu time out or click "Code works," which closes the menu. Clicking "Code does not work!" launches Lock Bots code troubleshooter. This troubleshooter provides the code along with tips and suggestions on how to resolve the incorrect code.
 
 ![Lock Bot asking if the code works or not](https://cdn.lock-bot.com/InvaildCodeTroubleshooter)
 
 <Callout type="default">
-  We recommend that you keep one key easily accessible independent of Lock Bot. Despite our best efforts to maintain data and stability it is impossible to guarantee that your data will always be accessible. [Read more](#how-lock-bot-keeps-you-safe) about we host Lock Bot.
+  We recommend that you keep one key easily accessible and independent of Lock Bot. Despite our best efforts to maintain data and stability, it is impossible to guarantee that your data will always be accessible. [Read more](#how-lock-bot-keeps-you-safe) about how we host Lock Bot.
 </Callout>
 
 
 ### Emergency Unlocks
 
-By default, all locks have emergency unlock option enabled. This allows the user to end the lock early in the event of an emergency. However, this also means the lock can not be resumed like a custom unlock option nor does this count towards the users finished lock statistics.
+By default, all locks have an emergency unlock option enabled. This allows the user to end the lock early in the event of an emergency. However, this also means the lock can not be resumed like a custom unlock option nor does this count towards the user's finished lock statistics.
 
-To active an emergency unlock, run the `/lock` command, click unlock options and then select the emergency unlock option, you will then be unlocked.
+To activate an emergency unlock, run the `/lock` command, select "Unlock options," then select the "Emergency Unlock" option. You will then be unlocked.
 
 ![Activating the emergency unlock](https://cdn.lock-bot.com/emergencyUnlock)
 
-Emergency unlocks are however optional and can be disabled but they are always enabled by default when making a new lock. To disable the option of an emergency unlock go to the unlock options section in the `/createlock` menu and toggle emergency unlock off.
+Emergency unlocks are optional and can be disabled on a per-lock biases. They are always enabled by default when making a new lock. To disable the emergency unlock option, go to the "Unlock Options" section in the `/createlock` menu and toggle emergency unlock off.
 
-Staff and any keyholders can end a lock early if need be even if the emergency unlock option is disabled, [click here](#ending-locks) to learn more about how Lock Bot staff can help.
+Staff and any keyholders can end a lock early if necessary, even if the emergency unlock option is disabled [Click here](#ending-locks) to learn more about how Lock Bot staff can help.
 
 
 
 ### Blocking Users
 
-Lock Bot allows users to block any user at any time for any reason to prevent them from interacting with themselves. 
+Lock Bot allows users to block any user at another time for any reason to prevent them from interacting.
 
-Blocked users can not view your profile or keyholder your lock. If a blocked user attempts to view your profile or update an old profile view they will be greeted with an error message.
+Blocked users can-not view your profile or keyhold your lock. If a blocked user tries to view your profile or update an old profile view, the bot will show them an error message.
 
 ![Error message returned trying to view a blocked users profile](https://cdn.lock-bot.com/blockedErrMsg)
 
-Additionally if a user is a keyholder for your lock when you block them they will be removed as a keyholder and no longer have any access to your lock. They will also be automatically removed from your trusted user list if they are in it.
+If you block a user that is currently keyholding your lock, Lock Bot will remove them as a keyholder, and they will no longer have any access to your lock. The bot will also automatically remove them from your trusted user list.
 
-To block a user either use the `/block` command followed by the user argument or by clicking the user options button under their profile and then hitting block.
+To block a user, use the `/block` command with a user argument or by clicking the "User Options" button under their profile and then clicking block.
 
-For more information about blocking please visit the [blocking command guide](/docs/user-settings/blocking-users).
+For more information about blocking users, please visit the [blocking command guide](/docs/user-settings/blocking-users).
 
 <Callout type="warning">
-  It is also highly recommend that any users you block in Lock Bot you also block [in Discord](https://support.discord.com/hc/en-us/articles/217916488-Blocking-Privacy-Settings).
+  It is also highly recommended you block any users you block in Lock bot [on Discord](https://support.discord.com/hc/en-us/articles/217916488-Blocking-Privacy-Settings) as well.
 </Callout>
 
 
@@ -115,42 +115,42 @@ For more information about blocking please visit the [blocking command guide](/d
 ### Reporting Users
 
 <Callout type="warning">
-  Their is currently no report system in Lock Bot, it will be coming soon. In the mean time please [join our support server](https://discord.gg/cGv8szjzSf) and reach out to staff directly to report any users.
+  There is currently no report system in Lock Bot, but this feature is coming soon. Until then, please [join our support server](https://discord.gg/cGv8szjzSf) and reach out to staff directly to report any users.
 </Callout>
 
 
 
 ### Private Accounts
 
-Lock Bot allows you make your account private to avoid non trusted users from viewing your account and your commands.
+Lock Bot allows you to make your account private, preventing non-trusted users from viewing your account and your commands.
 
-Marking your account private will make all lock commands send in private messages (e.g. `/lock` and `/createlock`) that only you can see. In addition users can not look at your user profile unless they are in your [trusted user list](/docs/user-settings/trusted-users) or are a pending or approved keyholder on a current lock.
+Marking your account private will make the bot send all lock commands responses in private messages (e.g., `/lock` and `/createlock`), so that only you can see their responses. Users also can-not view your user profile unless they are in your [trusted user list](/docs/user-settings/trusted-users) or are a pending or approved keyholder on a current lock.
 
-This feature can be enabled or disabled at any time, run the `/profile` command, click `settings` and toggle `private`.
+This feature can be enabled or disabled at any time by running the `/profile` command, clicking `settings`, and toggle the `private` option.
 
 [Click here](/docs/user-settings/settings#private) to learn more about private accounts.
 
 
 
-## How Lock Bot keeps you Safe
+## How Lock Bot Keeps you Safe
 
-Lock Bot is hosted with a [DigitalOcean's droplet](https://www.digitalocean.com/products/droplets) that only 2 people have access to. We use a [rethinkdb](https://rethinkdb.com/) database that is hosted on the droplet with its data being stored in a [digitalocean volume](https://docs.digitalocean.com/products/volumes/details/features/).
+Lock Bot is hosted on a [DigitalOcean droplet](https://www.digitalocean.com/products/droplets) that only two people have access to. We use a [RethinkDB](https://rethinkdb.com/) database on this server, which stores its data in a [digitalocean storage volume](https://docs.digitalocean.com/products/volumes/details/features/).
 
 > "Volumes store data on hardware that is separated from the Droplet and replicated multiple times across different racks, reducing the chances of data loss because of hardware failure."
 
-On top of this, Lock Bot's database is also backed up daily to a [digitalocean space](https://www.digitalocean.com/products/spaces). 
+Lock Bot's database is also backed up daily to a [DigitalOcean storage space](https://www.digitalocean.com/products/spaces). 
 
-This means the chance of downtime or hardware failure causing any data loss is incredibly low, but not technically impossible. 
+This means that the chance of downtime or any data loss is incredibly low, but not completely impossible.
 
-We will try to give as much notice as possible to any planned downtime, we recommend you follow our status updates channel in our [support server](https://discord.gg/cGv8szjzSf) for updates about Lock Bot's status. 
+We will try to give as much notice as possible to any planned downtime. We recommend you follow our status updates channel in our [support server](https://discord.gg/cGv8szjzSf) for  Lock Bot's status updates. 
 
 
 
-## What Lock Bot's Staff can do
+## What Lock Bot's Staff Can Do
 
-In situations where you all your other options listed above can not be used our staff team might be able to help. However please make sure all your other options are attempted first before coming to staff.
+In situations where all your other options listed above can-not be used, our staff team may be able to help. However, please make sure all your other options are exhausted before contacting our staff.
 
-All staff actions listed below are logged internally. This is to prevent any of these tools being abused.
+All staff actions documented here are logged internally to prevent any of these tools from being abused.
 
 <Callout type="info">
   If you need to reach out to staff for any of the issues below please [join our support server](https://discord.gg/cGv8szjzSf).
@@ -158,23 +158,23 @@ All staff actions listed below are logged internally. This is to prevent any of 
 
 ### Ending Locks
 
-In the event that you can not end your lock and you do not have a keyholder, Lock Bot staff can force a lock to end. This works much the same way as when a keyholder force ends a lock, where the lock will be stuck in a ready to be unlocked state and it can not be resumed.
+If you can-not end your lock and you do not have a keyholder, Lock Bot staff can force a lock to end. This works similar to when a keyholder force ends a lock. The lock will be stuck in a "ready to be unlocked" state and it cannot be resumed.
 
 ![End Lock DM](https://cdn.lock-bot.com/EndLockDMExample)
 
 
 ### Unfreezing Locks
 
-If your lock is frozen and you do not have a keyholder or any other way to unfreeze your lock Lock Bot's staff can unfreeze your lock. However it is recommended, if possible to create a new lock to avoid getting trapped in a stuck state. 
+If your lock is frozen and you do not have a keyholder or any other way to unfreeze your lock Lock Bot's staff can unfreeze your lock. However, we recommend creating a new lock to avoid getting trapped in this state.
 
 
 ### Force All Codes
 
-In the event you need access to all of your codes found in `/viewcodes` Lock Bot staff can help. Staff can force all codes including hidden codes to be visible to you.
+In the event you need access to all your codes found in the `/viewcodes` command, Lock Bot staff can help. Staff can force all codes, including hidden codes, to be visible to you.
 
 ![Force Code example](https://cdn.lock-bot.com/ForceCodesExample) 
 
 
 ## <Center>Conclusion</Center>
 
-We hope this guide help explains how Lock Bot works to keep you safe and the policy's in place regarding safety, your safety is very important to us. If you have any remaining questions or if you have any suggestions how to improve our policy's we would love to hear from you in our [support server](https://discord.gg/cGv8szjzSf).
+We hope this guide helps explain how Lock Bot works to keep you safe and the policies in place regarding safety, as your safety is very important to us. If you have any remaining questions or have any suggestions on how to improve our policies we would love to hear from you in our [support server](https://discord.gg/cGv8szjzSf).
