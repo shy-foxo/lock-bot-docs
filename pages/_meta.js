@@ -22,6 +22,12 @@ export default {
                 href: 'https://discord.com/oauth2/authorize?client_id=1107865216030617600',
                 newWindow: true
             },
+            bluesky: {
+              title: 'Bluesky',
+              type: 'page',
+              href: 'https://bsky.app/profile/lock-bot.com',
+              newWindow: true
+          },
             support: {
                 title: 'Support Server',
                 type: 'page',
@@ -55,4 +61,4 @@ export default {
         type: 'page'
       },
 
-  }
+}
