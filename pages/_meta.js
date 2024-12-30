@@ -19,9 +19,15 @@ export default {
             invite: {
                 title: 'Invite Lock Bot',
                 type: 'page',
-                href: 'https://discord.com/oauth2/authorize?client_id=1107865216030617600&permissions=379968&scope=bot%20applications.commands',
+                href: 'https://discord.com/oauth2/authorize?client_id=1107865216030617600',
                 newWindow: true
             },
+            bluesky: {
+              title: 'Bluesky',
+              type: 'page',
+              href: 'https://bsky.app/profile/lock-bot.com',
+              newWindow: true
+          },
             support: {
                 title: 'Support Server',
                 type: 'page',
@@ -55,4 +61,4 @@ export default {
         type: 'page'
       },
 
-  }
+}
